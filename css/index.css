@@ -166,39 +166,41 @@ a:hover
   height: auto !important;
   margin: 50px;
 }
-/* this is where css for typing animation starts*/
-{
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-weight: 300;
-}
 
-em {
-  font-weight: bold;
+
+
+
+/* this is where css for typing animation starts*/
+html, body {
+  margin: 0;
 }
 
 body {
-  height: 100vh;
-  margin: 0;
-  padding: 50px;
-  background: linear-gradient(45deg, rgba(gray, .01), rgba(gray, .15));
+
+  font-family: sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background-color: #000;
+  color: #000;
 }
 
 h1 {
-  font-size: 40px;
   margin: 0;
 }
 
-a {
-  position: fixed;
-  bottom: 25px;
-  font-size: 16px;
-  font-weight: bold;
-  color: darken(salmon, 25%);
-  text-decoration: none;
-  font-weight: 100;
-  font-family: Verdana, Geneva, sans-serif;
+.typing-text::after {
+  content: "|";
+  animation: blink ease 1s infinite;
+}
 
-  &:hover {
-    color: darken(salmon, 40%);
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  } 50% {
+    opacity: 1;
   }
 }

@@ -51,36 +51,80 @@
   </nav>
 </header>
 
-<h1 id="element"></h1>
 
-<a href="https://typeitjs.com" target="_blank">See More of TypeIt in Action</a>
+<h1 class="typing-text" ></h1>
 
 <script>
-//-- See full documentation for TypeIt at https://typeitjs.com.
+const text = document.querySelector('.typing-text');
 
-new TypeIt('#element', {
-  speed: 45
-})
-.type('The programers')
-.pause(300)
-.options({speed: 200})
-.delete(3)
-.options({speed: 45})
-.pause(300)
-.type('mer\'s wife sent him to teh sto.')
-.pause(500)
-.options({speed: 200})
-.delete(7)
-.type('he store.')
-.pause(500)
-.break()
-.options({speed: 45})
-.type('Her instructions were <em>"Buy butter. See if they have 10 eggs. If they do, buy ten.</em>"')
-.pause(1000)
-.break()
-.type('He came back with ten packs of butter. ')
-.pause(1000)
-.type('Because they have eggs.');
+// make a words array
+const words = [
+  "eat.",
+  "sleep.",
+  "code.",
+  "repeat."
+];
+
+// start typing effect
+setTyper(text, words);
+
+function setTyper(element, words) {
+
+  const LETTER_TYPE_DELAY = 75;
+  const WORD_STAY_DELAY = 2000;
+
+  const DIRECTION_FORWARDS = 0;
+  const DIRECTION_BACKWARDS = 1;
+
+  var direction = DIRECTION_FORWARDS;
+  var wordIndex = 0;
+  var letterIndex = 0;
+
+  var wordTypeInterval;
+
+  startTyping();
+
+  function startTyping() {
+    wordTypeInterval = setInterval(typeLetter, LETTER_TYPE_DELAY);
+  }
+
+  function typeLetter() {
+    const word = words[wordIndex];
+
+    if (direction == DIRECTION_FORWARDS) {
+      letterIndex++;
+
+      if (letterIndex == word.length) {
+        direction = DIRECTION_BACKWARDS;
+        clearInterval(wordTypeInterval);
+        setTimeout(startTyping, WORD_STAY_DELAY);
+      }
+
+    } else if (direction == DIRECTION_BACKWARDS) {
+      letterIndex--;
+
+      if (letterIndex == 0) {
+        nextWord();
+      }
+    }
+
+    const textToType = word.substring(0, letterIndex);
+
+    element.textContent = textToType;
+  }
+
+  function nextWord() {
+
+    letterIndex = 0;
+    direction = DIRECTION_FORWARDS;
+    wordIndex++;
+
+    if (wordIndex == words.length) {
+      wordIndex = 0;
+    }
+
+  }
+}
 </script>
 </div>
 </body>
