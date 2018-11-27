@@ -1,7 +1,7 @@
 #logo img {
 max-width: 25%;
 height: auto !important;
-margin: 50px;
+margin: 25px;
 }
 
 body
@@ -165,4 +165,26 @@ a:hover
   max-width: 50%;
   height: auto !important;
   margin: 50px;
+}
+/* this is where css for typing animation starts*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    body{
+    background: #EEE
+}
+
+    #str {
+   width: 800px;
+   padding: 20px;
+   height: auto;
+   font-family: sans-serif;
+   font-size: 40px;
+   margin: auto;
+   color: #fff;
+   font-weight: bold;
+   background: #000
 }

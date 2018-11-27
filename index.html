@@ -51,4 +51,15 @@
   </nav>
 </header>
 
+<div id="str"></div>
+<script>
+var string = "Oh hello there! Want to learn the basics of coding? If so let's get started!";
+var str = string.split("");
+var el = document.getElementById('str');
+(function animate() {
+str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running);
+var running = setTimeout(animate, 90);
+})();
+</script>
+
 </body>
