@@ -1,6 +1,7 @@
 #logo img {
 max-width: 25%;
 height: auto !important;
+margin: 50px;
 }
 
 body
@@ -158,4 +159,10 @@ a:hover
 {
   transform: scale(1.0, 1.0);
   opacity: 1;
+}
+@media (max-width: 500px) {
+  #logo img {
+  max-width: 50%;
+  height: auto !important;
+  margin: 50px;
 }
