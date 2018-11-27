@@ -19,17 +19,36 @@
 <body>
 
 <header>
-
+<div id='logo'>
     <img src='images/OKK-Code-logo.svg'>
+</div>
+<nav role='navigation'>
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
 
-  <nav>
-    <ul>
+    <!--
+    Some spans to act as a hamburger.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
       <li><a href='index.html'>Home</a></li>
       <li><a href='aboutus.html'>About Us</a></li>
       <li><a href='testyourself.html'>Test Yourself</a></li>
     </ul>
+  </div>
+
   </nav>
 </header>
 
 </body>
-</html>
