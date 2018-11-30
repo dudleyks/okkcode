@@ -4,6 +4,14 @@ height: auto !important;
 margin: 25px;
 }
 
+#page1 {
+  height: 1000px;
+}
+
+#page2 {
+  height: 1000px;
+}
+
 body
 {
   margin: 0 auto;
