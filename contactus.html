@@ -3,7 +3,7 @@
 <head>
   <meta charset= 'utf-8'>
   <title>Dropdown Menu</title>
-  <link rel='stylesheet'href='contactus.css'>
+  <link rel='stylesheet' type=text/css href='contactus.css'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <title>OKK Code</title>
   <link href='css-bootstrap/bootstrap.css' rel='stylesheet'>
@@ -13,6 +13,7 @@
     src='http://code.jquery.com/jquery-3.3.1.min.js'>
     </script>
     <script src='js/bootstrap.js'></script>
+
 </head>
 
 <body>
@@ -56,29 +57,20 @@
       </div>
 
 	    <section id="hire">
+
       <h1>Contact Us</h1>
 
-          <form>
-      	      <div class="field name-box">
-      		        <input type="text" id="name" placeholder="Who Are You?"/>
-              		<label for="name">Name</label>
-      		        <span class="ss-icon">check</span>
-      	      </div>
+        <div class="contact-form">
+        <form id="contac-form" method="post" action="">
+      		<input type="text" name="name" class="form-control" placeholder="Who Are You?" required><br>
 
-      	      <div class="field email-box">
-      		        <input type="text" id="email" placeholder="name@email.com"/>
-      		        <label for="email">Email</label>
-      		        <span class="ss-icon">check</span>
-      	      </div>
+      		<input type="email" name="email" class="form-control" placeholder="name@email.com"required><br>
 
-      	      <div class="field msg-box">
-      		        <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
-      		        <label for="msg">Msg</label>
-      		        <span class="ss-icon">check</span>
-      	      </div>
+      		<textarea name="comments" class="form-control" placeholder="Your message goes here..." rows="4" required></textarea><br>
 
-      	      <input class="button" type="submit" value="Send"s/>
+      	  <input type="submit" class="form-control submit" value="Send">
         </form>
+  </div>
       </section>
 
       <script>
