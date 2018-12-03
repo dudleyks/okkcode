@@ -4,6 +4,25 @@ height: auto !important;
 margin: 25px;
 }
 
+h1 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+small {
+  text-align: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
+
 body
 {
   margin: 0 auto;
@@ -175,7 +194,6 @@ a:hover
   height: auto !important;
   margin: 50px;
 }
-
 
 h1 {
   color: #63c5bc;

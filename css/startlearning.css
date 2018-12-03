@@ -5,9 +5,34 @@ margin: 25px;
 }
 
 h1 {
-  text-align: center;
+  text-align:center;
+  margin: 0 auto;
+  padding: 0;
 }
 
+h2 {
+  text-align:center;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 50px;
+  margin-top: 80px;
+}
+
+p {
+  text-align:center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+img{
+
+  width: 350px;
+  height: 450px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
+}
 body
 {
   margin: 0 auto;
