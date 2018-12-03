@@ -1,3 +1,7 @@
+img {
+  height: auto !important;
+}
+
 #logo img {
 max-width: 25%;
 height: auto !important;
