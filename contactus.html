@@ -59,62 +59,7 @@
 	    <section id="hire">
 
       <h1>Contact Us</h1>
+  
 
-        <div class="contact-form">
-        <form id="contac-form" method="post" action="">
-      		<input type="text" name="name" class="form-control" placeholder="Who Are You?" required><br>
-
-      		<input type="email" name="email" class="form-control" placeholder="name@email.com"required><br>
-
-      		<textarea name="comments" class="form-control" placeholder="Your message goes here..." rows="4" required></textarea><br>
-
-      	  <input type="submit" class="form-control submit" value="Send">
-        </form>
-  </div>
-      </section>
-
-      <script>
-        $('textarea').blur(function () {
-    $('#hire textarea').each(function () {
-        $this = $(this);
-        if ( this.value != '' ) {
-          $this.addClass('focused');
-          $('textarea + label + span').css({'opacity': 1});
-        }
-        else {
-          $this.removeClass('focused');
-          $('textarea + label + span').css({'opacity': 0});
-        }
-    });
-});
-
-$('#hire .field:first-child input').blur(function () {
-    $('#hire .field:first-child input').each(function () {
-        $this = $(this);
-        if ( this.value != '' ) {
-          $this.addClass('focused');
-          $('.field:first-child input + label + span').css({'opacity': 1});
-        }
-        else {
-          $this.removeClass('focused');
-          $('.field:first-child input + label + span').css({'opacity': 0});
-        }
-    });
-});
-
-$('#hire .field:nth-child(2) input').blur(function () {
-    $('#hire .field:nth-child(2) input').each(function () {
-        $this = $(this);
-        if ( this.value != '' ) {
-          $this.addClass('focused');
-          $('.field:nth-child(2) input + label + span').css({'opacity': 1});
-        }
-        else {
-          $this.removeClass('focused');
-          $('.field:nth-child(2) input + label + span').css({'opacity': 0});
-        }
-    });
-});
-        </script>
       </body>
 </html>
