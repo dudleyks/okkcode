@@ -217,7 +217,24 @@ h1 {
 }
 
 
+
 .btn-startlearning{
   background: #00acee;
   border-color: #009ad5;
   color: white;
+}
+
+#social-buttons button{
+  color: white
+}
+
+.footer {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
