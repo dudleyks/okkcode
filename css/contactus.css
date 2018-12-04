@@ -6,6 +6,7 @@ margin: 25px;
 
 body
 {
+  position: relative;
   margin: 0 auto;
   padding: 0;
 
@@ -15,6 +16,21 @@ body
   font-family: "Avenir Next", "Avenir", sans-serif;
 
   overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
+}
+
+.google-form {
+  position: relative;
+}
+
+.footer {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
 }
 
 h1 {
@@ -36,6 +52,8 @@ small {
   width: 50%
 }
 
+}
+
 body
 {
   margin: 0 auto;
@@ -52,14 +70,17 @@ body
 .btn-twitter{
   background: #00acee;
   border-color: #009ad5;
+  color: white;
 }
 .btn-facebook{
   background: #4868ac;
   border-color:#314776;
+  color: white;
 }
 .btn-pinterest{
   background: #b62f26;
   border-color: #b62f26;
+  color: white;
 }
 
 #social-buttons button{
